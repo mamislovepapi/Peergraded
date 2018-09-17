@@ -73,7 +73,7 @@ median(total_steps_imputed$daily_steps)
 ```{r}
 activity$date <- as.Date(strptime(activity$date, format="%Y-%m-%d"))
 activity$datetype <- sapply(activity$date, function(x) {
-  if (weekdays(x) == "Sábado" | weekdays(x) =="Domingo")
+  if (weekdays(x) == "SÃ¡bado" | weekdays(x) =="Domingo")
   {y <- "Weekend"} else
   {y <- "Weekday"}
   y
